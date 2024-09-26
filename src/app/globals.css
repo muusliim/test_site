@@ -2,26 +2,108 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  @apply font-onest
+}
+
+@layer components {
+
+  /* ШРИФТЫ */
+  /*
+   Dektop 
+   */
+   .logo {
+    @apply text-[rgb(29,29,27)] text-[21.49px] font-black leading-[36.84px] tracking-[0.77px] text-center;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .onest-bold-h1 {
+    @apply text-[#1D1D1B] text-[80px] font-bold leading-[110%] tracking-[-0.04em];
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .onest-bold-h2 {
+    @apply text-[#1D1D1B] text-[32px] font-bold leading-[120%] tracking-normal;
+  }
+
+  .onest-bold-h3 {
+    @apply text-[#1D1D1B] text-2xl font-bold tracking-normal;
+  }
+
+  .onest-button {
+    @apply text-[#1D1D1B] text-sm font-medium leading-6 tracking-[0.5px];
+  }
+
+  .onest-body-1 {
+    @apply text-[#1D1D1B] text-[22px] font-normal leading-8 tracking-normal;
+  }
+
+  .onest-body-2 {
+    @apply text-[#1D1D1B] text-[18px] font-normal leading-[22px] tracking-normal;
+  }
+
+  .onest-body-3 {
+    @apply text-[#1D1D1B] text-[14px] font-normal leading-5 tracking-normal;
+  }
+
+  /*
+ tablet
+ */
+ 
+  .onest-bold-h1-t {
+    @apply text-[52px]
+  }
+
+  .onest-bold-h2-t {
+    @apply text-[28px]
+  }
+
+  .onest-bold-h3-t {
+    @apply text-base leading-5
+  }
+
+  .onest-body-1-t {
+    @apply text-[14px] leading-5
+  }
+
+  .onest-body-2-t {
+    @apply text-[12px] leading-4
+  }
+
+  /* 
+    mobile
+  */
+  .onest-bold-h1-m {
+    @apply text-[36px]
+  }
+
+  .onest-bold-h2-t {
+    @apply text-[24px]
+  }
+
+  .onest-bold-h3-t {
+    @apply text-[20px] leading-[26px]
+  }
+
+  .onest-body-1-t {
+    @apply text-base leading-5
+  }
+
+  .onest-body-2-t {
+    @apply text-[14px] leading-[18px]
+  }
+
+  /* Components */
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 1220px;
   }
 }
