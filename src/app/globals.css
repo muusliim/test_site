@@ -122,4 +122,11 @@ body {
     background-image: url("../public/images/hero.png");
     position: relative;
   }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
