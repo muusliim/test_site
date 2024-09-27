@@ -34,7 +34,7 @@ export default function BalanceSection() {
 					</div>
 					<div className="col-span-1">
 						<div className="flex flex-col gap-4 p-8">
-							<h3 className="onest-bold-h3 mt-12 relative">
+							<h3 className="onest-bold-h3 mt-12 relative hyphens-auto">
 								<Image
 									src={arrow}
 									alt="arrow"

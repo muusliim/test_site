@@ -7,7 +7,7 @@ export default function Hero() {
 				<h1 className="onest-bold-h1 pb-14">
 					Монетизируйте клиентскую базу, не снижая NPS
 				</h1>
-				<h2 className="onest-regular-h2 font-normal w-[626px]  backdrop-blur-[1px] ">
+				<h2 className="onest-regular-h2 font-normal max-w-[626px]  backdrop-blur-[1px] ">
 					Найдите идеальный баланс выручки и удовлетворённости пользователей с
 					платформой рекламной монетизации
 				</h2>

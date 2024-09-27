@@ -16,9 +16,9 @@ export default function ButtonToggleSection() {
 		);
 	};
 	return (
-		<div className=" h-[212px] container flex justify-center mx-auto mb-[65px]">
+		<div className=" h-[212px] container flex justify-center mx-auto mb-[65px] px-[30px]">
 			<div className="grid grid-cols-2 mb-16">
-				<div className="onest-bold-h2 w-[460px]">
+				<div className="onest-bold-h2 max-w-[460px]">
 					Дополнительные источники выручки для разных компаний
 				</div>
 				<div className="flex flex-col">
@@ -28,7 +28,7 @@ export default function ButtonToggleSection() {
 								{buttonText.map((item, index) => (
 									<button
 										key={`${index}` + item}
-										className={`w-[276px] px-[37px] py-[10px] rounded-lg ${
+										className={`max-w-[276px] px-[37px] py-[10px] rounded-lg ${
 											active === item ? `${activeClass} text-white` : ""
 										} `}
 										onClick={handleClick}
@@ -39,12 +39,12 @@ export default function ButtonToggleSection() {
 							</div>
 							<div>
 								{active === "Операторам" ? (
-									<div className=" mt-8 onest-body-1 w-[560px]">
+									<div className=" mt-8 onest-body-1 max-w-[560px]">
 										Найдите идеальный баланс выручки и удовлетворённости
 										пользователей с платформой рекламной монетизации.
 									</div>
 								) : (
-									<div className=" mt-8 onest-body-1 w-[560px]">
+									<div className=" mt-8 onest-body-1 max-w-[560px]">
 										Дополнительные возможности обогащения данных об аудитории и
 										монетизации
 									</div>

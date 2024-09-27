@@ -109,7 +109,6 @@ body {
   /* Components */
   .max-container {
     max-width: 1440px;
-    margin: 0 auto;
   }
 
   .container {
@@ -128,5 +127,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .black-button {
+    @apply bg-customBlack rounded-[10px] px-5 max-h-12 flex justify-center items-center py-3 w-[210px] text-white onest-button;
   }
 }

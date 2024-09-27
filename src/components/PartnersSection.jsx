@@ -11,10 +11,10 @@ export default function PartnersSection() {
 	];
 	return (
 		<section className="bg-gray-03 flex justify-center h-[300px] ">
-			<div className="container m-auto pl-[30px]">
-				<div className="flex flex-row items-center justify-evenly">
+			<div className="container m-auto pl-[30px] pr-[70px]">
+				<div className="flex flex-row items-center justify-between">
 					<h3 className="onest-bold-h3">Наши партнеры по монетизации</h3>
-					<div className="grid grid-cols-3 items-center justify-center justify-items-center">
+					<div className="w-[632px] grid grid-cols-3 items-center justify-center justify-items-center">
 						{partners.map((item, index) => (
 							<Image
 								key={index}
