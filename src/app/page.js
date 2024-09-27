@@ -1,6 +1,7 @@
 import BalanceSection from "@/components/BalanceSection";
 import ButtonToggleSection from "@/components/ButtonToggleSection";
 import Hero from "@/components/Hero";
+import PartnersSection from "@/components/PartnersSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,7 +9,8 @@ export default function Home() {
 		<main>
 			<Hero />
 			<ButtonToggleSection />
-			<BalanceSection/>
+			<BalanceSection />
+			<PartnersSection />
 		</main>
 	);
 }

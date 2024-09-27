@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
 	return (
-		<section className="bg-gray-03 h-[801px] flex justify-center bg-hero mt-3">
+		<section className="bg-gray-03 h-[800px] flex justify-center bg-hero mt-3">
 			<div className="container mt-[118px] px-[40px]">
 				<h1 className="onest-bold-h1 pb-14">
 					Монетизируйте клиентскую базу, не снижая NPS

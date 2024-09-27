@@ -16,7 +16,7 @@ export default function ButtonToggleSection() {
 		);
 	};
 	return (
-		<div className=" h-[212px] container flex justify-center mx-auto">
+		<div className=" h-[212px] container flex justify-center mx-auto mb-[65px]">
 			<div className="grid grid-cols-2 mb-16">
 				<div className="onest-bold-h2 w-[460px]">
 					Дополнительные источники выручки для разных компаний
