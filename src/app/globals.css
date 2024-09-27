@@ -12,14 +12,19 @@ html {
   @apply font-onest
 }
 
+body {
+  @apply bg-gray-03 overflow-x-hidden
+
+}
+
 @layer components {
 
   /* ШРИФТЫ */
   /*
    Dektop 
    */
-   .logo {
-    @apply text-[rgb(29,29,27)] text-[21.49px] font-black leading-[36.84px] tracking-[0.77px] text-center;
+  .logo {
+    @apply text-[#1D1D1B] text-[21.49px] font-black leading-[36.84px] tracking-[0.77px] text-center;
   }
 
   .onest-bold-h1 {
@@ -28,6 +33,10 @@ html {
 
   .onest-bold-h2 {
     @apply text-[#1D1D1B] text-[32px] font-bold leading-[120%] tracking-normal;
+  }
+
+  .onest-regular-h2 {
+    @apply text-[#1D1D1B] text-[24px] font-normal leading-8 tracking-normal;
   }
 
   .onest-bold-h3 {
@@ -53,7 +62,7 @@ html {
   /*
  tablet
  */
- 
+
   .onest-bold-h1-t {
     @apply text-[52px]
   }
@@ -105,5 +114,12 @@ html {
 
   .container {
     max-width: 1220px;
+  }
+
+  .bg-hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../public/images/hero.png");
+    position: relative;
   }
 }

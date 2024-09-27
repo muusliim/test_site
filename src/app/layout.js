@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 
 const onest = localFont({
-	src: "./fonts/Onest-VariableFont_wght.ttf",
+	src:'../public/fonts/Onest-VariableFont_wght.ttf',
 	variable: "--font-onest",
 	weight: "100 900",
 });
