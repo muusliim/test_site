@@ -9,8 +9,8 @@ export default function HowWeWorkSection() {
 		"Ежемесячные автоматические отчёты для каждого правообладателя.",
 	];
 	return (
-		<section className="bg-gray-04 pb-24 h-[650px] pt-[75px] flex justify-end">
-			<div className="max-w-[1330px] mr-0">
+		<section className="bg-gray-04 h-[650px] items-center flex justify-end">
+			<div className="max-w-[1330px] mr-0 mb-5">
 				<div className="grid grid-cols-2 items-center justify-items-end gap-[75px]">
 					<div className=" max-w-[497px] y-10 relative pt-[42px] justify-self-start pl-[30px]">
 						<h3 className="onest-bold-h2 mb-8 ">
@@ -18,7 +18,7 @@ export default function HowWeWorkSection() {
 						</h3>
 						<div className="flex flex-col">
 							{text.map((item, index) => (
-								<div className="flex flex-row mb-5 gap-4" key={index}>
+								<div className="flex flex-row mb-3 gap-4" key={index}>
 									<Image
 										src={arrow}
 										alt="arrow"

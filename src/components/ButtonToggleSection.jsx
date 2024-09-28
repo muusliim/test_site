@@ -28,7 +28,7 @@ export default function ButtonToggleSection() {
 								{buttonText.map((item, index) => (
 									<button
 										key={`${index}` + item}
-										className={`max-w-[276px] px-[37px] py-[10px] rounded-lg ${
+										className={`max-w-[276px] px-[37px] w-full py-[10px] rounded-lg ${
 											active === item ? `${activeClass} text-white` : ""
 										} `}
 										onClick={handleClick}

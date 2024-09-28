@@ -29,7 +29,7 @@ export default function BalanceSection() {
 					</div>
 					<div className="col-span-2 flex justify-center items-center">
 						<div className="border-[1px] border-customOrange w-[221px] relative before:content-[''] before:absolute before:w-3 before:h-3 before:bg-customOrange before:rounded-full before:-top-[6px] before:left-[-10px]"></div>
-						<Image src={figure} alt="figure" width={120} height={120} />
+						<Image src={figure} alt="figure" width={120} height={120}  className="w-[120px] h-[120px]"/>
 						<div className="border-[1px] border-customOrange w-[221px] relative before:absolute before:w-3 before:h-3 before:bg-customOrange before:rounded-full before:-top-[6px] before:-right-[10px]"></div>
 					</div>
 					<div className="col-span-1">
