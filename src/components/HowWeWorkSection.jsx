@@ -9,7 +9,7 @@ export default function HowWeWorkSection() {
 		"Ежемесячные автоматические отчёты для каждого правообладателя.",
 	];
 	return (
-		<section className="bg-gray-04 h-[650px] items-center flex justify-end">
+		<section className="bg-gray-04 h-[650px] items-center flex justify-end" id="howwework">
 			<div className="max-w-[1330px] mr-0 mb-5">
 				<div className="grid grid-cols-2 items-center justify-items-end gap-[75px]">
 					<div className=" max-w-[497px] y-10 relative pt-[42px] justify-self-start pl-[30px]">

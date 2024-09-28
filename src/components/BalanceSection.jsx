@@ -4,7 +4,7 @@ import figure from "@/public/images/figure.png";
 
 export default function BalanceSection() {
 	return (
-		<section className="bg-gray-04 flex justify-center  ">
+		<section className="bg-gray-04 flex justify-center" id="balance">
 			<div className="h-[650px] pt-28 container mx-auto mt-8 px-[40px]">
 				<h2 className="onest-bold-h2 text-center">
 					Баланс между выручкой и удовлетворённостью пользователей

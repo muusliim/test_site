@@ -6,6 +6,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth
 }
 
 html {
@@ -129,6 +130,6 @@ body {
   }
 
   .black-button {
-    @apply bg-customBlack rounded-[10px] px-5 max-h-12 flex justify-center items-center py-3 w-[210px] text-white onest-button;
+    @apply bg-customBlack rounded-[10px] px-5 max-h-12 flex justify-center items-center py-3 w-[210px] text-white onest-button transition-all duration-300 hover:bg-gray-01;
   }
 }

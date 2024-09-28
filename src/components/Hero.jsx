@@ -11,7 +11,7 @@ export default function Hero() {
 					Найдите идеальный баланс выручки и удовлетворённости пользователей с
 					платформой рекламной монетизации
 				</h2>
-				<button className="mt-20 w-[210px] h-12 flex justify-center items-center p-5 bg-customOrange rounded-lg text-white">
+				<button className="mt-20 w-[210px] h-12 flex justify-center items-center p-5 bg-customOrange rounded-lg text-white hover:bg-[#E0570E] transition-all duration-300 active:bg-gray-02 active:text-gray-01">
 					<Link href="#">Заказать звонок</Link>
 				</button>
 			</div>

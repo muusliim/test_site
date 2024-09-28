@@ -28,8 +28,8 @@ export default function ButtonToggleSection() {
 								{buttonText.map((item, index) => (
 									<button
 										key={`${index}` + item}
-										className={`max-w-[276px] px-[37px] w-full py-[10px] rounded-lg ${
-											active === item ? `${activeClass} text-white` : ""
+										className={`max-w-[276px] px-[37px] w-full py-[10px] rounded-lg transition-all duration-300  ${
+											active === item ? `${activeClass} text-white` : "hover:text-black"
 										} `}
 										onClick={handleClick}
 									>

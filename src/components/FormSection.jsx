@@ -75,8 +75,8 @@ export default function FormSection() {
 										htmlFor="checkbox"
 										className="text-customBlack onest-body-3"
 									>
-										Я ознакомлен(а) с политикой конфиденциальности и
-										согласен(на) на обработку персональных данных.
+										Я ознакомлен(а) с <a href="/" className="underline">политикой конфиденциальности</a> и
+										согласен(на) на обработку <a href="/" className="underline">персональных данных.</a>
 									</label>
 								</div>
 								<button type="submit" className="black-button mt-12 w-full">Отправить</button>
