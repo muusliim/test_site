@@ -25,9 +25,9 @@ export default function FormSection() {
 
 	return (
 		<section className="bg-gray-03 flex justify-center lg:h-[650px]">
-			<div className="container mx-auto flex justify-center items-center px-8">
+			<div className="container mx-auto flex justify-center items-center px-8 max-lg:mb-12 max-sm:px-4">
 				<div className="max-lg:mt-12">
-					<h3 className="onest-bold-h2 max-lg:onest-bold-h2-t">Заполните форму</h3>
+					<h3 className="onest-bold-h2 max-lg:onest-bold-h2-t max-sm:onest-bold-h2-m">Заполните форму</h3>
 					<form action="#" onSubmit={handleSubmit}>
 						<div className="mt-16 grid lg:grid-cols-2 gap-10">
 							<div>
@@ -79,7 +79,7 @@ export default function FormSection() {
 										согласен(на) на обработку <a href="/" className="underline">персональных данных.</a>
 									</label>
 								</div>
-								<button type="submit" className="black-button mt-12 w-full">Отправить</button>
+								<button type="submit" className="black-button mt-12 w-full">Заказать звонок</button>
 							</div>
 						</div>
 					</form>

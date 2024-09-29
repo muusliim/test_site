@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export default function Header() {
 	const nav = [
 		{ label: "Преимущества", link: "#balance" },
-		{ label: "Как работаем", link: "#howwework" },
+		{ label: "Как мы работаем", link: "#howwework" },
 	];
 
 	const [activeLink, setActiveLink] = useState("");
@@ -48,7 +48,7 @@ export default function Header() {
 		>
 			<div className="lg:container items-center min-lg:items-center flex justify-between mt-4 mx-auto pl-[29px] max-lg:fixed-lg">
 				<a href="#home">
-					<div className="bg-white w-[161px] h-10 flex justify-center items-center rounded-lg my-4 logo">
+					<div className="bg-white w-[161px] max-sm:w-[113px] md:h-10 flex justify-center items-center rounded-lg my-4 logo max-sm:onest-logo-m">
 						LOGO
 					</div>
 				</a>
@@ -78,7 +78,7 @@ export default function Header() {
 						return (
 							<div
 								key={item}
-								className="w-6 h-[2px] rounded-md bg-customOrange "
+								className="w-6 h-[2px] rounded-md bg-customOrange max-sm:w-4"
 							></div>
 						);
 					})}
@@ -91,29 +91,34 @@ export default function Header() {
 					className="fixed inset-0 bg-black bg-opacity-50 z-20 lg:hidden transition-opacity duration-300"
 					onClick={toggleMenu}
 				>
-					<div className="absolute top-0 right-0 bg-white w-[283px] h-full shadow-lg flex items-center">
+					<div className="absolute top-0 right-0 bg-white w-[283px] max-sm:w-full h-full shadow-lg flex items-center">
+						<div className="max-sm:absolute max-sm:flex top-4 left-[60px] hidden md:h-10  justify-center items-center rounded-lg my-4 logo max-sm:onest-logo-m">
+							LOGO
+						</div>
 						<button
 							onClick={toggleMenu}
-							className="navMenuButton absolute top-4 right-4 m-0"
+							className="navMenuButton absolute top-4 right-4 m-0 max-sm:mr-4 max-sm:mt-3"
 						>
 							{[1, 2].map((item, i, arr) => {
 								return (
 									<div
 										key={item}
 										className={`w-6 h-[2px] rounded-md bg-customOrange ${
-											arr[i] === 2 ? "rotate-45 translate-x-0 -translate-y-1" : "-rotate-45 translate-y-1"
+											arr[i] === 2
+												? "rotate-45 translate-x-0 -translate-y-1 max-sm:-translate-y-[0.15rem]"
+												: "-rotate-45 translate-y-1 max-sm:translate-y-[0.15rem]"
 										} `}
 									></div>
 								);
 							})}
 						</button>
 						<nav className="flex flex-col mt-[14px]">
-							<ul className="flex flex-col justify-center items-center gap-2">
+							<ul className="flex flex-col justify-center items-start gap-[10px] ">
 								{nav.map((item, index) => (
 									<li key={index}>
 										<a
 											href={item.link}
-											className={`block px-4 py-2 font-semibold hover:text-customOrange ${
+											className={`block px-4 py-2 max-md:onest-body-2-m font-medium hover:text-customOrange ${
 												activeLink === item.link.slice(1)
 													? "text-customOrange underline"
 													: ""

@@ -6,7 +6,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  /* overflow-x: hidden */
 }
 
 html {
@@ -105,6 +106,9 @@ body {
   .onest-body-2-m {
     @apply text-[14px] leading-[18px]
   }
+  .onest-logo-m {
+    @apply text-[#1D1D1B] text-base font-black leading-6 tracking-[0.5px]
+  }
 
   /* Components */
   .max-container {
@@ -138,7 +142,7 @@ body {
   }
 
   .navMenuButton {
-    @apply lg:hidden w-11 h-11 border-solid border-2 rounded-[10px] border-customOrange bg-inherit mx-12 flex justify-center items-center flex-col py-2 gap-[6px]
+    @apply lg:hidden w-11 h-11 border-solid border-2 rounded-[10px] border-customOrange bg-inherit mx-12 flex justify-center items-center flex-col py-2 gap-[6px] max-sm:w-[32px] max-sm:h-[32px] max-sm:mr-8 max-sm:py-[3px] max-sm:gap-[3px]
   }
 
   .clickwave {
@@ -146,10 +150,10 @@ body {
   }
 
   .zyphronix {
-    @apply w-[102px] h-[71px] max-lg:w-[70px] max-lg:h-[48px]
+    @apply w-[102px] h-[71px] max-lg:w-[70px] max-lg:h-[48px] max-sm:order-2
   }
 
   .novasphere {
-    @apply w-[192px] h-[60.5px] max-lg:w-[120px] max-lg:h-[31px]
+    @apply w-[192px] h-[60.5px] max-lg:w-[120px] max-lg:h-[31px] max-sm:w-[137px] max-sm:h-[35px]
   }
 }
