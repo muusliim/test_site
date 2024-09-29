@@ -64,7 +64,7 @@ body {
  */
 
   .onest-bold-h1-t {
-    @apply text-[52px]
+    @apply text-[51px]
   }
 
   .onest-bold-h2-t {
@@ -90,19 +90,19 @@ body {
     @apply text-[36px]
   }
 
-  .onest-bold-h2-t {
+  .onest-bold-h2-m {
     @apply text-[24px]
   }
 
-  .onest-bold-h3-t {
+  .onest-bold-h3-m {
     @apply text-[20px] leading-[26px]
   }
 
-  .onest-body-1-t {
+  .onest-body-1-m {
     @apply text-base leading-5
   }
 
-  .onest-body-2-t {
+  .onest-body-2-m {
     @apply text-[14px] leading-[18px]
   }
 
@@ -131,5 +131,25 @@ body {
 
   .black-button {
     @apply bg-customBlack rounded-[10px] px-5 max-h-12 flex justify-center items-center py-3 w-[210px] text-white onest-button transition-all duration-300 hover:bg-gray-01;
+  }
+
+  .fixed-lg {
+    @apply fixed top-0 left-0 right-0 z-10
+  }
+
+  .navMenuButton {
+    @apply lg:hidden w-11 h-11 border-solid border-2 rounded-[10px] border-customOrange bg-inherit mx-12 flex justify-center items-center flex-col py-2 gap-[6px]
+  }
+
+  .clickwave {
+    @apply w-[177px] h-[54px] max-lg:w-[120px] max-lg:h-[37px]
+  }
+
+  .zyphronix {
+    @apply w-[102px] h-[71px] max-lg:w-[70px] max-lg:h-[48px]
+  }
+
+  .novasphere {
+    @apply w-[192px] h-[60.5px] max-lg:w-[120px] max-lg:h-[31px]
   }
 }

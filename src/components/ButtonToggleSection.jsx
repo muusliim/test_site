@@ -16,20 +16,22 @@ export default function ButtonToggleSection() {
 		);
 	};
 	return (
-		<div className=" h-[212px] container flex justify-center mx-auto mb-[65px] px-[30px]">
-			<div className="grid grid-cols-2 mb-16">
-				<div className="onest-bold-h2 max-w-[460px]">
+		<div className=" h-[212px] container flex justify-center mx-auto lg:mb-[65px] px-[30px]">
+			<div className="grid grid-cols-2 mb-16 ">
+				<div className="onest-bold-h2 lg:max-w-[460px] max-lg:onest-bold-h2-t max-lg:w-[259px]">
 					Дополнительные источники выручки для разных компаний
 				</div>
 				<div className="flex flex-col">
 					<div>
 						<div className="flex flex-col">
-							<div className="flex justify-around bg-gray-04 items-center onest-regular-h2 font-bold text-gray-01 rounded-lg">
+							<div className="flex justify-around bg-gray-04 items-center onest-regular-h2 font-bold text-gray-01 rounded-lg ">
 								{buttonText.map((item, index) => (
 									<button
 										key={`${index}` + item}
-										className={`max-w-[276px] px-[37px] w-full py-[10px] rounded-lg transition-all duration-300  ${
-											active === item ? `${activeClass} text-white` : "hover:text-black"
+										className={`lg:max-w-[276px] lg:px-[37px] w-full lg:py-[10px] rounded-lg transition-all duration-300 max-lg:onest-bold-h3-t max-lg:w-[166px] max-lg:py-2 ${
+											active === item
+												? `${activeClass} text-white`
+												: "hover:text-black"
 										} `}
 										onClick={handleClick}
 									>
@@ -39,12 +41,12 @@ export default function ButtonToggleSection() {
 							</div>
 							<div>
 								{active === "Операторам" ? (
-									<div className=" mt-8 onest-body-1 max-w-[560px]">
+									<div className=" mt-8 onest-body-1 max-w-[560px] max-lg:onest-body-1-t">
 										Найдите идеальный баланс выручки и удовлетворённости
 										пользователей с платформой рекламной монетизации.
 									</div>
 								) : (
-									<div className=" mt-8 onest-body-1 max-w-[560px]">
+									<div className=" mt-8 onest-body-1 max-w-[560px] max-lg:onest-body-1-t">
 										Дополнительные возможности обогащения данных об аудитории и
 										монетизации
 									</div>
